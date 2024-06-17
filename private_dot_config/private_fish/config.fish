@@ -9,17 +9,17 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
+# Pyenv
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH $PYENV_ROOT/bin $PATH
 pyenv init - | source
 
 # Set X Server Display
-# https://nickymeuleman.netlify.app/blog/gui-on-wsl2-cypress
-# set DISPLAY (cat /etc/resolv.conf | string match -r 'nameserver\s+\K.*' | head -n 1):0.0
-# pushd /mnt/c/
-# set DISPLAY (cmd.exe /C "powershell -Command \"(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPv4).IPAddress + ':0.0'\"" | string trim)
-# popd
-
 sudo /etc/init.d/dbus start &> /dev/null
 
+# Add ~/bin to path
 set -Ux fish_user_paths ~/bin $fish_user_paths
+
+# Disable welcome message
+set fish_greeting
+
