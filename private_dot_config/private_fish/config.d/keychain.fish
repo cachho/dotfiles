@@ -1,4 +1,4 @@
-f status is-login and status is-interactive
+if status is-login and status is-interactive
     # To add a key, set -Ua SSH_KEYS_TO_AUTOLOAD keypath
     # Example:
     # set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/id..
