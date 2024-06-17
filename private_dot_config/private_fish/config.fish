@@ -1,5 +1,3 @@
-fish_ssh_agent
-
 set PATH "$HOME/.local/bin:$PATH"
 
 # pnpm
