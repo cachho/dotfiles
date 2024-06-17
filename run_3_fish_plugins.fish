@@ -13,7 +13,7 @@ fisher install jorgebucaran/nvm.fish
 
 ## Install specific target version
 # Set target version variable
-NODE_TARGET_VERSION = "v18.17"
+NODE_TARGET_VERSION = "18.17"
 
 set --universal nvm_default_version $NODE_TARGET_VERSION
 nvm install $NODE_TARGET_VERSION
