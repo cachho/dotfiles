@@ -12,9 +12,6 @@ set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH $PYENV_ROOT/bin $PATH
 pyenv init - | source
 
-# Set X Server Display
-sudo /etc/init.d/dbus start &> /dev/null
-
 # Add ~/bin to path
 set -Ux fish_user_paths ~/bin $fish_user_paths
 
