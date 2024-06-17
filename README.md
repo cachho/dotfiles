@@ -1,6 +1,6 @@
 # dotfiles
 
-This repo uses [chezmoi]()
+This repo uses [chezmoi](https://www.chezmoi.io/)
 
 ## Installation
 
