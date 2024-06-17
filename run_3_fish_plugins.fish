@@ -20,3 +20,7 @@ nvm install $NODE_TARGET_VERSION
 
 ## Use
 nvm use $NODE_TARGET_VERSION
+
+
+######### SSH Agent #########
+fisher install danhper/fish-ssh-agent
